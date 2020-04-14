@@ -1,0 +1,13 @@
+<% cache(element) do %>
+  <%= element_view_for(element) do |el| %>
+    <h5>
+      <%= el.render :featured_headline %>
+    </h5>
+    <p>
+      <%= el.render :featured_text %>
+    </p>
+    <p>
+      <%= el.render :featured_link %>
+    </p>
+  <% end %>
+<% end %>

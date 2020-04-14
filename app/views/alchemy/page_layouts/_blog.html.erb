@@ -1,0 +1,74 @@
+<!-- Info Banner For Announcements or Links -->
+   <!-- <a href="https://zurb.com/university/foundation-intro" class="docs-banner course-banner">
+     <div class="info">
+       <h5 class=""><strong>To master everything new in 6.4, along with the rest of Foundation register for our Aug 8th Webinar Class &rsaquo;</strong></h5>
+     </div>
+   </a> -->
+
+   <!-- <a href="https://zurb.com/wired" id="notice">
+     <div class="info hide-for-small">
+       <div id="clockdiv" class="countdown">
+           <span class="timer-day days"></span>
+           <span class="timer-colon">:</span>
+         <span class="timer-hour hours"></span>
+         <span class="timer-colon">:</span>
+         <span class="timer-hour minutes"></span>
+         <span class="timer-colon">:</span>
+         <span class="timer-seconds seconds"></span>
+       </div>
+     </div>
+   </a> -->
+
+
+       <!-- Start Top Bar -->
+       <%= render_elements only: 'blog_title' %>
+       <!-- End Top Bar -->
+
+
+       <div class="callout large primary">
+         <div class="text-center">
+           <h1>Gastronomic CMS</h1>
+         </div>
+       </div>
+
+   <article class="grid-container">
+       <%= render_elements only: 'blog_post' %>
+
+         <div class="medium-3 cell" data-sticky-container>
+           <div class="sticky" data-sticky data-anchor="content">
+             <%= render_elements only: 'categories_block' %>
+
+             <%= render_elements only: 'featured' %>
+           </div>
+         </div>
+
+
+       <div class="grid-x cell">
+         <ul class="pagination" role="navigation" aria-label="Pagination">
+           <li class="disabled">Previous</li>
+           <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+           <li><a href="#" aria-label="Page 2">2</a></li>
+           <li><a href="#" aria-label="Page 3">3</a></li>
+           <li><a href="#" aria-label="Page 4">4</a></li>
+           <li class="ellipsis"></li>
+           <li><a href="#" aria-label="Page 12">12</a></li>
+           <li><a href="#" aria-label="Page 13">13</a></li>
+           <li><a href="#" aria-label="Next page">Next</a></li>
+         </ul>
+       </div>
+   </article>
+       <script src="bower_components/jquery/dist/jquery.js?hash=4d87a332421d7631f5e204529a472bff"></script>
+       <script src="bower_components/what-input/what-input.js?hash=af041c30741a345292bed3cb0f1295ca"></script>
+       <script src="bower_components/foundation-sites/dist/foundation.js?hash=37375b21ccbe17669cdc30790ba5a003"></script>
+       <script src="js/app.js?hash=78ce4569316d2924214f821d75e9028f"></script>
+     </body>
+   </html>
+
+
+
+   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+   <script>
+     $(document).foundation();
+   </script>
